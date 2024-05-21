@@ -3,6 +3,10 @@
 
 This is a simple web application to fetch and display historical stock prices using Streamlit and Yahoo Finance.
 
+## Screenshots
+
+![App Screenshot](screenshots/app_screenshot.png)
+
 ## Features
 
 - User can input a stock ticker symbol.
@@ -47,9 +51,7 @@ This will start a local server and open the app in your default web browser.
 2. Enter a stock ticker symbol (e.g., `AAPL` for Apple Inc.).
 3. View the historical closing prices and basic statistics.
 
-## Screenshots
 
-![App Screenshot](screenshots/app_screenshot.png)
 
 ## Contributing
 
