@@ -26,17 +26,15 @@ with col1:
 with col2:
     st.write("Basic Statistics")
     st.write(ticker_df.describe())
-col3 = st.columns([1])
-# Column 3: Display business news
-with col3:
-    st.write("Business News")
-    
-    # Fetch business news
-    news = newsapi.get_top_headlines(category='business', language='en', country='us')
 
-    for article in news['articles'][:10]:
-        st.write(f"### {article['title']}")
-        st.write(article['description'])
-        st.write(f"[Read more]({article['url']})")
+# Column 3: Display business news
+st.write("Business News")
+# Fetch business news
+news = newsapi.get_top_headlines(category='business', language='en', country='us')
+
+for article in news['articles'][:10]:
+    st.write(f"### {article['title']}")
+    st.write(article['description'])
+    st.write(f"[Read more]({article['url']})")
 
 
